@@ -10,4 +10,4 @@ Thumbs.db
 .claude/
 
 # Source images — only the copies in /assets/ ship
-images/
+/images/
