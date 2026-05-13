@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120" width="200" height="120">
+  <!-- Setting sun: half-circle on horizon + radiating rays -->
+  <!-- Gold accent color matching Skyline aesthetic -->
+  <defs>
+    <linearGradient id="sunGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e6b933"/>
+      <stop offset="100%" stop-color="#c9a227"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Half-sun (setting into horizon) -->
+  <path d="M 60 90 A 40 40 0 0 1 140 90 Z" fill="url(#sunGrad)"/>
+
+  <!-- Horizon line -->
+  <line x1="20" y1="90" x2="180" y2="90" stroke="#c9a227" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Radiating rays (5 rays above the sun) -->
+  <!-- Center ray -->
+  <line x1="100" y1="50" x2="100" y2="20" stroke="#c9a227" stroke-width="3" stroke-linecap="round"/>
+  <!-- Left rays -->
+  <line x1="80" y1="55" x2="68" y2="30" stroke="#c9a227" stroke-width="3" stroke-linecap="round"/>
+  <line x1="63" y1="68" x2="38" y2="55" stroke="#c9a227" stroke-width="3" stroke-linecap="round"/>
+  <!-- Right rays -->
+  <line x1="120" y1="55" x2="132" y2="30" stroke="#c9a227" stroke-width="3" stroke-linecap="round"/>
+  <line x1="137" y1="68" x2="162" y2="55" stroke="#c9a227" stroke-width="3" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#FAFAF7" />
+  <title>Red Sunset KP — Sustainable hospitality, clean energy future</title>
+  <meta name="description" content="A boutique eco-resort and clean energy initiative on Koh Phangan, Thailand. Built around renewable infrastructure from the ground up." />
+  <link rel="canonical" href="https://redsunsetkp.com/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Red Sunset KP — Sustainable hospitality, clean energy future" />
+  <meta property="og:description" content="A boutique eco-resort and clean energy initiative on Koh Phangan, Thailand." />
+  <meta property="og:url" content="https://redsunsetkp.com/" />
+  <meta property="og:image" content="https://redsunsetkp.com/assets/brand/og-image.png" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="th_TH" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Red Sunset KP" />
+  <meta name="twitter:description" content="Sustainable hospitality with a clean energy future. Koh Phangan, Thailand." />
+
+  <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg" />
+  <link rel="icon" type="image/png" href="assets/brand/favicon-source.png" />
+  <link rel="apple-touch-icon" href="assets/brand/favicon-source.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Red Sunset KP Co., Ltd.",
+    "url": "https://redsunsetkp.com",
+    "logo": "https://redsunsetkp.com/assets/brand/red-sunset-logo.png",
+    "description": "Sustainable hospitality and clean energy company developing a boutique eco-resort on Koh Phangan, Thailand.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Koh Phangan",
+      "addressRegion": "Surat Thani",
+      "postalCode": "84280",
+      "addressCountry": "TH"
+    },
+    "email": "hello@redsunsetkp.com",
+    "telephone": "+66 96 790 7754"
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #FAFAF7;
+      --ink: #1A1A1A;
+      --ink-soft: #4A4A4A;
+      --ink-muted: #6B6B6B;
+      --coral: #E07856;
+      --coral-deep: #C4623F;
+      --teal: #2C5F5D;
+      --teal-deep: #1F4544;
+      --sand: #E8DCC4;
+      --sand-soft: #F2EADA;
+      --gold: #C9A227;
+      --gold-light: #E6B933;
+      --line: #E5E2D8;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+    }
+
+    .font-display { font-family: 'Fraunces', Georgia, serif; font-optical-sizing: auto; }
+    .font-body { font-family: 'Inter', system-ui, sans-serif; }
+
+    /* Thai overrides */
+    html[lang="th"] body,
+    html[lang="th"] .font-body { font-family: 'Noto Sans Thai', 'Inter', system-ui, sans-serif; }
+    html[lang="th"] .font-display { font-family: 'Noto Sans Thai', 'Fraunces', Georgia, serif; font-weight: 500; }
+
+    .eyebrow {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--coral);
+    }
+    .eyebrow-teal { color: var(--teal); }
+    .eyebrow-ink { color: var(--ink-muted); }
+
+    .display-1 { font-family: 'Fraunces', Georgia, serif; font-weight: 400; letter-spacing: -0.02em; line-height: 1.02; }
+    .display-2 { font-family: 'Fraunces', Georgia, serif; font-weight: 400; letter-spacing: -0.015em; line-height: 1.08; }
+
+    .wordmark {
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    /* Nav */
+    .nav-bar {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+      transition: background-color 0.4s ease, backdrop-filter 0.4s ease, border-color 0.4s ease, padding 0.3s ease;
+      border-bottom: 1px solid transparent;
+      padding-top: 1.25rem; padding-bottom: 1.25rem;
+    }
+    .nav-bar.scrolled {
+      background: rgba(250, 250, 247, 0.78);
+      backdrop-filter: saturate(1.4) blur(14px);
+      -webkit-backdrop-filter: saturate(1.4) blur(14px);
+      border-bottom-color: rgba(26,26,26,0.06);
+      padding-top: 0.85rem; padding-bottom: 0.85rem;
+    }
+
+    .nav-link {
+      font-size: 0.875rem; color: var(--ink-soft); font-weight: 400;
+      position: relative; padding: 0.25rem 0; transition: color 0.2s;
+    }
+    .nav-link:hover { color: var(--ink); }
+    .nav-link::after {
+      content: ''; position: absolute; bottom: -2px; left: 0; right: 0;
+      height: 1px; background: var(--coral); transform: scaleX(0); transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+    .nav-link:hover::after { transform: scaleX(1); }
+
+    /* CTA */
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: var(--ink); color: var(--bg);
+      padding: 0.9rem 1.6rem; border-radius: 999px;
+      font-size: 0.9rem; font-weight: 500; letter-spacing: 0.01em;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .btn-primary:hover { background: var(--coral); transform: translateY(-1px); }
+    .btn-secondary {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      color: var(--ink); padding: 0.9rem 0.25rem; font-size: 0.9rem; font-weight: 500;
+      border-bottom: 1px solid var(--ink); transition: color 0.2s, border-color 0.2s, gap 0.2s;
+    }
+    .btn-secondary:hover { color: var(--coral); border-color: var(--coral); gap: 0.7rem; }
+
+    /* Eyebrow chip */
+    .chip {
+      display: inline-flex; align-items: center; gap: 0.55rem;
+      padding: 0.4rem 0.85rem; border-radius: 999px;
+      background: rgba(224, 120, 86, 0.08);
+      border: 1px solid rgba(224, 120, 86, 0.25);
+      font-size: 0.72rem; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--coral-deep);
+    }
+    .pulse-dot {
+      width: 0.45rem; height: 0.45rem; border-radius: 999px; background: var(--coral);
+      position: relative;
+    }
+    .pulse-dot::before {
+      content: ''; position: absolute; inset: 0; border-radius: 999px; background: var(--coral);
+      animation: pulse 2.2s ease-out infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 0.6; }
+      80%, 100% { transform: scale(2.6); opacity: 0; }
+    }
+
+    /* Hero gradient */
+    .hero-art {
+      position: relative; aspect-ratio: 4 / 5; max-height: 640px; width: 100%;
+      border-radius: 28px; overflow: hidden;
+      background:
+        radial-gradient(120% 80% at 50% 100%, #F2A065 0%, #E07856 22%, #C4623F 42%, #8E4A38 70%, #2C5F5D 100%);
+      box-shadow: 0 24px 60px -28px rgba(196, 98, 63, 0.45);
+    }
+    .hero-sun {
+      position: absolute; left: 50%; bottom: -20%; transform: translateX(-50%);
+      width: 70%; aspect-ratio: 1; border-radius: 999px;
+      background: radial-gradient(circle, #FFE4A8 0%, #F5C779 35%, rgba(245, 199, 121, 0) 70%);
+      filter: blur(8px);
+      animation: sunBreathe 8s ease-in-out infinite;
+    }
+    @keyframes sunBreathe {
+      0%, 100% { transform: translateX(-50%) scale(1); opacity: 0.9; }
+      50% { transform: translateX(-50%) scale(1.06); opacity: 1; }
+    }
+    .hero-grid {
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(26,26,26,0.18) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(26,26,26,0.18) 1px, transparent 1px);
+      background-size: 48px 48px;
+      mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.85) 55%, rgba(0,0,0,0.95) 100%);
+      -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.85) 55%, rgba(0,0,0,0.95) 100%);
+      opacity: 0.55;
+    }
+    .hero-panels { position: absolute; inset: auto 0 0 0; height: 36%; }
+
+    /* Section dividers */
+    .rule {
+      height: 1px; background: var(--line); width: 100%;
+    }
+
+    /* Cards */
+    .vision-card {
+      background: rgba(255,255,255,0.55);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 2.25rem 2rem;
+      transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+    }
+    .vision-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 20px 40px -28px rgba(26,26,26,0.18);
+      border-color: rgba(224,120,86,0.4);
+    }
+    .vision-icon {
+      width: 56px; height: 56px; border-radius: 14px;
+      display: inline-flex; align-items: center; justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+    .icon-coral { background: rgba(224, 120, 86, 0.1); color: var(--coral-deep); }
+    .icon-teal { background: rgba(44, 95, 93, 0.1); color: var(--teal); }
+
+    /* Milestone cards */
+    .milestone-card {
+      background: var(--bg);
+      border: 1px solid var(--line);
+      border-radius: 18px; padding: 1.75rem;
+    }
+    .milestone-icon {
+      width: 44px; height: 44px; border-radius: 12px;
+      background: var(--sand-soft); color: var(--teal);
+      display: inline-flex; align-items: center; justify-content: center;
+      margin-bottom: 1rem;
+    }
+
+    /* Why-grid cards */
+    .why-item {
+      padding: 1.75rem 0;
+      border-top: 1px solid var(--line);
+      display: grid; grid-template-columns: 48px 1fr; gap: 1.25rem;
+    }
+    .why-icon {
+      width: 44px; height: 44px; border-radius: 12px;
+      background: rgba(224, 120, 86, 0.08); color: var(--coral-deep);
+      display: inline-flex; align-items: center; justify-content: center;
+    }
+
+    /* Sustainability section */
+    .section-teal {
+      background:
+        radial-gradient(80% 60% at 20% 0%, rgba(44, 95, 93, 0.06) 0%, transparent 60%),
+        radial-gradient(80% 60% at 80% 100%, rgba(224, 120, 86, 0.04) 0%, transparent 60%),
+        var(--bg);
+    }
+
+    /* Timeline */
+    .timeline-row {
+      display: grid; grid-template-columns: 140px 1fr; gap: 1.5rem;
+      padding: 1.1rem 0; border-top: 1px solid var(--line);
+      align-items: baseline;
+    }
+    .timeline-row:last-child { border-bottom: 1px solid var(--line); }
+    .timeline-marker {
+      font-family: 'Fraunces', Georgia, serif; font-style: italic; font-weight: 400;
+      font-size: 1.05rem; color: var(--teal);
+      letter-spacing: -0.005em;
+    }
+    .timeline-label { font-size: 1rem; color: var(--ink-soft); }
+
+    /* Leadership cards */
+    .leader-card {
+      background: rgba(255,255,255,0.55);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 2.25rem;
+    }
+    .leader-featured { padding: 2.75rem; }
+    .avatar {
+      border-radius: 999px; background: #E8E4D8;
+      display: inline-flex; align-items: center; justify-content: center;
+      color: var(--teal); font-family: 'Fraunces', Georgia, serif;
+      flex-shrink: 0;
+      box-shadow: inset 0 0 0 1px var(--line);
+    }
+    .avatar img { width: 100%; height: 100%; border-radius: 999px; object-fit: cover; }
+
+    /* Footer */
+    .footer {
+      background: var(--teal-deep);
+      color: #E8E4D8;
+    }
+    .footer a { color: #E8E4D8; opacity: 0.85; transition: opacity 0.2s; }
+    .footer a:hover { opacity: 1; color: #fff; }
+    .footer .footer-disclaimer { color: rgba(232,228,216,0.55); }
+
+    /* Fade-up animation */
+    .fade-up { opacity: 0; transform: translateY(18px); transition: opacity 0.9s ease, transform 0.9s ease; }
+    .fade-up.in { opacity: 1; transform: translateY(0); }
+    .fade-stagger > * { transition-delay: 0s; }
+    .fade-stagger > *:nth-child(2) { transition-delay: 0.08s; }
+    .fade-stagger > *:nth-child(3) { transition-delay: 0.16s; }
+    .fade-stagger > *:nth-child(4) { transition-delay: 0.24s; }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+        scroll-behavior: auto !important;
+      }
+      .fade-up { opacity: 1; transform: none; }
+    }
+
+    /* Mobile nav */
+    .mobile-menu {
+      position: fixed; inset: 0; background: var(--bg); z-index: 49;
+      transform: translateY(-100%); transition: transform 0.4s ease;
+      padding: 5rem 1.5rem 2rem;
+      display: flex; flex-direction: column; gap: 0.5rem;
+    }
+    .mobile-menu.open { transform: translateY(0); }
+    .mobile-menu a { font-family: 'Fraunces', Georgia, serif; font-size: 2rem; color: var(--ink); padding: 0.65rem 0; border-bottom: 1px solid var(--line); }
+
+    /* Lang toggle */
+    .lang-toggle {
+      display: inline-flex; align-items: center; gap: 0.15rem;
+      padding: 0.25rem; border-radius: 999px;
+      background: rgba(26,26,26,0.05); font-size: 0.75rem;
+    }
+    .lang-toggle button {
+      padding: 0.3rem 0.7rem; border-radius: 999px; color: var(--ink-soft); font-weight: 500; letter-spacing: 0.08em;
+      transition: background 0.2s, color 0.2s;
+    }
+    .lang-toggle button.active { background: var(--ink); color: var(--bg); }
+
+    /* Section spacing */
+    .section { padding: 6rem 0; }
+    @media (max-width: 768px) { .section { padding: 4rem 0; } }
+
+    .container-narrow { max-width: 1180px; margin-left: auto; margin-right: auto; padding-left: 1.5rem; padding-right: 1.5rem; }
+    .container-tight { max-width: 720px; margin-left: auto; margin-right: auto; padding-left: 1.5rem; padding-right: 1.5rem; }
+
+    /* Resort sketch SVG container */
+    .sketch-wrap {
+      border: 1px solid var(--line); border-radius: 22px;
+      background: linear-gradient(180deg, #FBF8F0 0%, #F6F0E0 100%);
+      padding: 1.5rem; aspect-ratio: 5 / 4;
+      display: flex; align-items: center; justify-content: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== NAV ========== -->
+  <nav class="nav-bar" id="navBar">
+    <div class="container-narrow flex items-center justify-between">
+      <a href="#top" class="flex items-center gap-3" aria-label="Red Sunset KP — Home">
+        <img src="assets/brand/red-sunset-logo.svg" alt="Red Sunset KP logo" width="60" height="36" style="height:36px;width:auto;" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-block'" />
+        <span class="font-display text-xl" style="display:none;color:var(--coral-deep)">Red Sunset KP</span>
+        <span class="wordmark text-[0.72rem] sm:text-xs" style="color:var(--ink)">Red Sunset KP</span>
+      </a>
+
+      <div class="hidden lg:flex items-center gap-9">
+        <a href="#vision" class="nav-link" data-i18n="nav.about">About</a>
+        <a href="#resort" class="nav-link" data-i18n="nav.resort">The Resort</a>
+        <a href="#why" class="nav-link" data-i18n="nav.why">Why Koh Phangan</a>
+        <a href="#sustainability" class="nav-link" data-i18n="nav.sustainability">Sustainability</a>
+        <a href="#leadership" class="nav-link" data-i18n="nav.leadership">Leadership</a>
+        <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <div class="lang-toggle" role="group" aria-label="Language toggle">
+          <button id="langEN" class="active" aria-label="English">EN</button>
+          <button id="langTH" aria-label="Thai">TH</button>
+        </div>
+        <button id="menuToggle" class="lg:hidden p-2 -mr-2" aria-label="Open menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="4" y1="8" x2="20" y2="8"/><line x1="4" y1="16" x2="20" y2="16"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <a href="#vision" data-i18n="nav.about">About</a>
+    <a href="#resort" data-i18n="nav.resort">The Resort</a>
+    <a href="#why" data-i18n="nav.why">Why Koh Phangan</a>
+    <a href="#sustainability" data-i18n="nav.sustainability">Sustainability</a>
+    <a href="#leadership" data-i18n="nav.leadership">Leadership</a>
+    <a href="#contact" data-i18n="nav.contact">Contact</a>
+  </div>
+
+  <!-- ========== SECTION 1 — HERO ========== -->
+  <header id="top" class="section pt-32 md:pt-36 pb-16 md:pb-24">
+    <div class="container-narrow">
+      <div class="grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-12 lg:gap-16 items-center">
+        <div class="fade-up">
+          <span class="chip">
+            <span class="pulse-dot" aria-hidden="true"></span>
+            <span data-i18n="hero.chip">Koh Phangan · In Development</span>
+          </span>
+
+          <h1 class="display-1 text-[2.6rem] sm:text-5xl lg:text-[4rem] mt-7 mb-6" data-i18n="hero.headline">
+            Where sunset meets sustainability.
+          </h1>
+
+          <p class="text-lg leading-relaxed max-w-xl mb-9" style="color:var(--ink-soft)" data-i18n="hero.subhead">
+            A boutique eco-resort and clean energy initiative on Koh Phangan, Thailand. Built around renewable infrastructure from the ground up — a foundation for the island's energy transition.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-x-7 gap-y-4 mb-8">
+            <a href="mailto:hello@redsunsetkp.com" class="btn-primary">
+              <span data-i18n="hero.cta.primary">General Inquiries</span>
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+            </a>
+            <a href="#vision" class="btn-secondary">
+              <span data-i18n="hero.cta.secondary">Learn the vision</span>
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 5l4 4 4-4"/></svg>
+            </a>
+          </div>
+
+          <p class="text-xs tracking-[0.14em] uppercase" style="color:var(--ink-muted)" data-i18n="hero.trust">
+            A Red Sunset KP Co., Ltd. project · Registered in Thailand
+          </p>
+        </div>
+
+        <!-- Hero art -->
+        <div class="fade-up">
+          <div class="hero-art" role="img" aria-label="Animated sunset gradient with geometric solar panel grid">
+            <div class="hero-sun" aria-hidden="true"></div>
+            <div class="hero-grid" aria-hidden="true"></div>
+            <!-- Solar panel grid overlay -->
+            <svg class="hero-panels" viewBox="0 0 400 144" preserveAspectRatio="none" aria-hidden="true">
+              <defs>
+                <linearGradient id="panelFade" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#1A1A1A" stop-opacity="0.0"/>
+                  <stop offset="100%" stop-color="#1A1A1A" stop-opacity="0.45"/>
+                </linearGradient>
+              </defs>
+              <g fill="url(#panelFade)" stroke="rgba(255,255,255,0.18)" stroke-width="0.5">
+                <!-- Three rows of solar panel cells in perspective -->
+                <g transform="translate(0,30)">
+                  <rect x="20" y="0" width="36" height="20"/>
+                  <rect x="60" y="0" width="36" height="20"/>
+                  <rect x="100" y="0" width="36" height="20"/>
+                  <rect x="140" y="0" width="36" height="20"/>
+                  <rect x="180" y="0" width="36" height="20"/>
+                  <rect x="220" y="0" width="36" height="20"/>
+                  <rect x="260" y="0" width="36" height="20"/>
+                  <rect x="300" y="0" width="36" height="20"/>
+                  <rect x="340" y="0" width="36" height="20"/>
+                </g>
+                <g transform="translate(0,60)">
+                  <rect x="10" y="0" width="42" height="24"/>
+                  <rect x="56" y="0" width="42" height="24"/>
+                  <rect x="102" y="0" width="42" height="24"/>
+                  <rect x="148" y="0" width="42" height="24"/>
+                  <rect x="194" y="0" width="42" height="24"/>
+                  <rect x="240" y="0" width="42" height="24"/>
+                  <rect x="286" y="0" width="42" height="24"/>
+                  <rect x="332" y="0" width="42" height="24"/>
+                </g>
+                <g transform="translate(0,96)">
+                  <rect x="-5" y="0" width="52" height="32"/>
+                  <rect x="51" y="0" width="52" height="32"/>
+                  <rect x="107" y="0" width="52" height="32"/>
+                  <rect x="163" y="0" width="52" height="32"/>
+                  <rect x="219" y="0" width="52" height="32"/>
+                  <rect x="275" y="0" width="52" height="32"/>
+                  <rect x="331" y="0" width="52" height="32"/>
+                </g>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== SECTION 2 — THE VISION ========== -->
+  <section id="vision" class="section">
+    <div class="container-narrow">
+      <div class="max-w-2xl mb-14 fade-up">
+        <p class="eyebrow mb-5" data-i18n="vision.eyebrow">Our Thesis</p>
+        <h2 class="display-2 text-4xl md:text-[2.75rem]" data-i18n="vision.headline">
+          Beautiful places. Cleaner energy. Real impact.
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-7 fade-up fade-stagger">
+        <!-- Card 1 — Hospitality -->
+        <article class="vision-card">
+          <div class="vision-icon icon-coral" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 27V14l11-7 11 7v13"/>
+              <path d="M5 27h22"/>
+              <path d="M13 27v-7h6v7"/>
+              <path d="M9 18h2M21 18h2"/>
+            </svg>
+          </div>
+          <h3 class="font-display text-2xl mb-3" data-i18n="vision.c1.title">Boutique Hospitality</h3>
+          <p class="text-base leading-relaxed" style="color:var(--ink-soft)" data-i18n="vision.c1.body">
+            A small, intentionally-designed eco-resort in Koh Phangan. Premium guest experience, operationally supported by our sister company Kaite Bloom Co., Ltd.
+          </p>
+        </article>
+
+        <!-- Card 2 — Clean Energy DNA -->
+        <article class="vision-card">
+          <div class="vision-icon icon-teal" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="16" cy="10" r="4"/>
+              <path d="M16 3v2M16 15v2M9 10h2M21 10h2M11 5l1.4 1.4M19.6 13.6L21 15M11 15l1.4-1.4M19.6 6.4L21 5"/>
+              <rect x="5" y="20" width="22" height="8" rx="1"/>
+              <path d="M9 20v8M13 20v8M17 20v8M21 20v8M25 20v8M5 24h22"/>
+            </svg>
+          </div>
+          <h3 class="font-display text-2xl mb-3" data-i18n="vision.c2.title">Clean Energy DNA</h3>
+          <p class="text-base leading-relaxed" style="color:var(--ink-soft)" data-i18n="vision.c2.body">
+            Solar-first design from day one. The resort runs on its own renewable infrastructure — not retrofitted, but built that way.
+          </p>
+        </article>
+
+        <!-- Card 3 — Long View -->
+        <article class="vision-card">
+          <div class="vision-icon icon-coral" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 24l7-7 5 5 9-12"/>
+              <path d="M19 10h7v7"/>
+            </svg>
+          </div>
+          <h3 class="font-display text-2xl mb-3" data-i18n="vision.c3.title">Built for the Long View</h3>
+          <p class="text-base leading-relaxed" style="color:var(--ink-soft)" data-i18n="vision.c3.body">
+            An investment foundation designed for scale — structured to support future expansion into renewable energy infrastructure under Thailand's national investment frameworks.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SECTION 3 — THE RESORT ========== -->
+  <section id="resort" class="section" style="background:linear-gradient(180deg, transparent 0%, var(--sand-soft) 50%, transparent 100%);">
+    <div class="container-narrow">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-16">
+        <div class="fade-up">
+          <p class="eyebrow mb-5" data-i18n="resort.eyebrow">Phase One</p>
+          <h2 class="display-2 text-4xl md:text-[2.75rem] mb-7" data-i18n="resort.headline">
+            A small resort with a big idea.
+          </h2>
+          <div class="space-y-5 text-base leading-relaxed" style="color:var(--ink-soft)">
+            <p data-i18n="resort.p1">
+              The company holds title to a coastal parcel on Koh Phangan, acquired and registered in the early operational phase of Red Sunset KP. The land is held as the operational base for the project — not for passive investment.
+            </p>
+            <p data-i18n="resort.p2">
+              The build plan calls for a small number of villas on a hillside site, designed with restraint. Compact footprint, native landscaping, and renewable energy infrastructure integrated into the structure rather than added later.
+            </p>
+            <p data-i18n="resort.p3">
+              The guest experience is shaped around quiet, light, and the materials of the place. A short walk from the coastline. Architecture that gives more than it takes.
+            </p>
+          </div>
+        </div>
+
+        <!-- Architectural sketch SVG -->
+        <div class="fade-up">
+          <div class="sketch-wrap" role="img" aria-label="Architectural sketch of hillside villa with integrated solar panels">
+            <svg viewBox="0 0 500 400" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#FBF5E6"/>
+                  <stop offset="100%" stop-color="#F6E9CC"/>
+                </linearGradient>
+                <linearGradient id="hill" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#E8DCC4"/>
+                  <stop offset="100%" stop-color="#D8C9A8"/>
+                </linearGradient>
+                <linearGradient id="hill2" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#D8C9A8"/>
+                  <stop offset="100%" stop-color="#C4B68A"/>
+                </linearGradient>
+              </defs>
+
+              <!-- Sky -->
+              <rect width="500" height="400" fill="url(#sky)"/>
+
+              <!-- Sun -->
+              <circle cx="380" cy="110" r="34" fill="#E6B933" opacity="0.55"/>
+              <circle cx="380" cy="110" r="22" fill="#C9A227" opacity="0.65"/>
+
+              <!-- Background hill -->
+              <path d="M0,260 Q120,200 250,225 T500,210 L500,400 L0,400 Z" fill="url(#hill2)" opacity="0.7"/>
+
+              <!-- Foreground hill -->
+              <path d="M0,310 Q150,255 320,275 T500,290 L500,400 L0,400 Z" fill="url(#hill)"/>
+
+              <!-- Distant trees (palm hint, minimal) -->
+              <g stroke="#8E8261" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.7">
+                <line x1="60" y1="290" x2="60" y2="240"/>
+                <path d="M60 240 Q50 234 42 232 M60 240 Q70 234 78 232 M60 240 Q54 230 50 224 M60 240 Q66 230 70 224"/>
+                <line x1="450" y1="285" x2="450" y2="245"/>
+                <path d="M450 245 Q442 240 436 238 M450 245 Q458 240 464 238 M450 245 Q446 236 443 230 M450 245 Q454 236 457 230"/>
+              </g>
+
+              <!-- Main villa: low-slung box with sloped roof -->
+              <g>
+                <!-- Lower terrace deck -->
+                <path d="M120,330 L380,330 L380,355 L120,355 Z" fill="#FFFDF7" stroke="#8E8261" stroke-width="1.2"/>
+                <!-- Pillars -->
+                <line x1="140" y1="330" x2="140" y2="355" stroke="#8E8261" stroke-width="1"/>
+                <line x1="200" y1="330" x2="200" y2="355" stroke="#8E8261" stroke-width="1"/>
+                <line x1="260" y1="330" x2="260" y2="355" stroke="#8E8261" stroke-width="1"/>
+                <line x1="320" y1="330" x2="320" y2="355" stroke="#8E8261" stroke-width="1"/>
+                <line x1="365" y1="330" x2="365" y2="355" stroke="#8E8261" stroke-width="1"/>
+
+                <!-- Villa wall -->
+                <rect x="135" y="265" width="245" height="65" fill="#FFFDF7" stroke="#5A5340" stroke-width="1.3"/>
+                <!-- Window panels -->
+                <rect x="155" y="280" width="45" height="40" fill="#E8DCC4" stroke="#8E8261" stroke-width="0.8"/>
+                <rect x="215" y="280" width="45" height="40" fill="#E8DCC4" stroke="#8E8261" stroke-width="0.8"/>
+                <rect x="275" y="280" width="45" height="40" fill="#E8DCC4" stroke="#8E8261" stroke-width="0.8"/>
+                <!-- Door -->
+                <rect x="335" y="278" width="35" height="52" fill="#C4B68A" stroke="#5A5340" stroke-width="0.8"/>
+
+                <!-- Pitched roof -->
+                <path d="M125,265 L390,265 L355,220 L160,220 Z" fill="#5A5340" stroke="#2C2616" stroke-width="1.2"/>
+                <!-- Solar panel array on roof -->
+                <g stroke="#2C5F5D" stroke-width="0.6">
+                  <rect x="175" y="225" width="28" height="36" fill="#2C5F5D" opacity="0.85"/>
+                  <rect x="206" y="225" width="28" height="36" fill="#2C5F5D" opacity="0.85"/>
+                  <rect x="237" y="225" width="28" height="36" fill="#2C5F5D" opacity="0.85"/>
+                  <rect x="268" y="225" width="28" height="36" fill="#2C5F5D" opacity="0.85"/>
+                  <rect x="299" y="225" width="28" height="36" fill="#2C5F5D" opacity="0.85"/>
+                  <rect x="330" y="225" width="28" height="36" fill="#2C5F5D" opacity="0.85"/>
+                  <!-- Panel cell divisions -->
+                  <line x1="189" y1="225" x2="189" y2="261" stroke="rgba(232,220,196,0.4)"/>
+                  <line x1="220" y1="225" x2="220" y2="261" stroke="rgba(232,220,196,0.4)"/>
+                  <line x1="251" y1="225" x2="251" y2="261" stroke="rgba(232,220,196,0.4)"/>
+                  <line x1="282" y1="225" x2="282" y2="261" stroke="rgba(232,220,196,0.4)"/>
+                  <line x1="313" y1="225" x2="313" y2="261" stroke="rgba(232,220,196,0.4)"/>
+                  <line x1="344" y1="225" x2="344" y2="261" stroke="rgba(232,220,196,0.4)"/>
+                  <line x1="175" y1="243" x2="358" y2="243" stroke="rgba(232,220,196,0.4)"/>
+                </g>
+              </g>
+
+              <!-- Coastline hint (bottom-right) -->
+              <path d="M380,360 Q420,355 450,358 T500,355 L500,400 L380,400 Z" fill="#A8B8C4" opacity="0.4"/>
+              <path d="M380,360 Q420,355 450,358 T500,355" stroke="#7A8E9C" stroke-width="0.8" fill="none" opacity="0.5"/>
+
+              <!-- Subtle ground texture (dotted) -->
+              <g fill="#8E8261" opacity="0.3">
+                <circle cx="40" cy="380" r="0.8"/>
+                <circle cx="80" cy="385" r="0.8"/>
+                <circle cx="120" cy="382" r="0.8"/>
+                <circle cx="430" cy="388" r="0.8"/>
+                <circle cx="470" cy="384" r="0.8"/>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Milestone cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 fade-up fade-stagger">
+        <article class="milestone-card">
+          <div class="milestone-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12l5 5L20 7"/>
+            </svg>
+          </div>
+          <p class="eyebrow eyebrow-ink mb-2" data-i18n="resort.m1.label">Land Secured</p>
+          <p class="text-base" style="color:var(--ink-soft)" data-i18n="resort.m1.body">Phase one complete.</p>
+        </article>
+
+        <article class="milestone-card">
+          <div class="milestone-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="4" y="4" width="16" height="16" rx="1"/>
+              <line x1="4" y1="9" x2="20" y2="9"/>
+              <line x1="9" y1="4" x2="9" y2="20"/>
+            </svg>
+          </div>
+          <p class="eyebrow eyebrow-ink mb-2" data-i18n="resort.m2.label">Design & Planning</p>
+          <p class="text-base" style="color:var(--ink-soft)" data-i18n="resort.m2.body">In progress with local Thai architectural consultancy.</p>
+        </article>
+
+        <article class="milestone-card">
+          <div class="milestone-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="6" width="18" height="12" rx="0.5"/>
+              <line x1="7" y1="6" x2="7" y2="18"/>
+              <line x1="12" y1="6" x2="12" y2="18"/>
+              <line x1="17" y1="6" x2="17" y2="18"/>
+              <line x1="3" y1="12" x2="21" y2="12"/>
+            </svg>
+          </div>
+          <p class="eyebrow eyebrow-ink mb-2" data-i18n="resort.m3.label">Renewable Infrastructure</p>
+          <p class="text-base" style="color:var(--ink-soft)" data-i18n="resort.m3.body">Built into the foundation.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SECTION 4 — WHY KOH PHANGAN ========== -->
+  <section id="why" class="section">
+    <div class="container-narrow">
+      <div class="text-center max-w-2xl mx-auto mb-6 fade-up">
+        <p class="eyebrow mb-5" data-i18n="why.eyebrow">Why Koh Phangan</p>
+        <h2 class="display-2 text-4xl md:text-[2.75rem] mb-5" data-i18n="why.headline">
+          An island ready for the next chapter.
+        </h2>
+        <p class="text-base" style="color:var(--ink-muted)" data-i18n="why.subhead">
+          Two business partners. One opportunity that kept showing up.
+        </p>
+      </div>
+
+      <p class="text-lg leading-relaxed text-center container-tight mt-10 mb-14 fade-up" style="color:var(--ink-soft)" data-i18n="why.lede">
+        Red Sunset KP was born from a working partnership on the ground. Founding Director Sirin Nekhamatcha, an established businesswoman based in Koh Phangan, and her strategic partner identified a recurring pattern: an island with growing premium hospitality demand, but ageing energy infrastructure unable to support it. This is the company built to address both.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-0 max-w-4xl mx-auto fade-up">
+        <!-- Point 1 -->
+        <div class="why-item">
+          <div class="why-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 5h3v3H5zM10.5 5h3v3h-3zM16 5h3v3h-3z"/>
+              <path d="M6.5 8v3M12 8v3M17.5 8v3"/>
+              <path d="M4 11h16"/>
+              <path d="M8 14v5M16 14v5"/>
+              <path d="M5 19h14"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="font-display text-xl mb-2" data-i18n="why.p1.title">Energy import dependency</h3>
+            <p class="text-base leading-relaxed" style="color:var(--ink-soft)" data-i18n="why.p1.body">
+              Koh Phangan imports the majority of its electricity via undersea cables from the mainland — a structural vulnerability for any business building here.
+            </p>
+          </div>
+        </div>
+
+        <!-- Point 2 -->
+        <div class="why-item">
+          <div class="why-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="9" cy="10" r="3.5"/>
+              <path d="M9 4v1.5M9 14.5V16M3 10h1.5M13.5 10H15M5 6l1 1M12 13l1 1M5 14l1-1M12 7l1-1"/>
+              <path d="M11 18.5h6a3 3 0 100-6 4 4 0 00-7.5 1"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="font-display text-xl mb-2" data-i18n="why.p2.title">Seasonal demand spikes and outages</h3>
+            <p class="text-base leading-relaxed" style="color:var(--ink-soft)" data-i18n="why.p2.body">
+              During the rainy season, electricity demand rises while supply reliability drops. Outages are routine across the island. Distributed solar with storage directly addresses this challenge — for our resort and for the wider community.
+            </p>
+          </div>
+        </div>
+
+        <!-- Point 3 -->
+        <div class="why-item">
+          <div class="why-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 16c2-6 7-10 13-10-1 7-5 12-11 13-1 .2-3 0-3-3"/>
+              <path d="M5 19c2-3 5-5 8-6"/>
+              <path d="M15 7v3M18 9l2-2"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="font-display text-xl mb-2" data-i18n="why.p3.title">Renewable infrastructure gap</h3>
+            <p class="text-base leading-relaxed" style="color:var(--ink-soft)" data-i18n="why.p3.body">
+              Despite ideal solar conditions, distributed renewable infrastructure on the island remains underdeveloped — a meaningful gap for both businesses and residents.
+            </p>
+          </div>
+        </div>
+
+        <!-- Point 4 -->
+        <div class="why-item">
+          <div class="why-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="6" cy="9" r="2.5"/>
+              <circle cx="12" cy="14" r="2"/>
+              <circle cx="18" cy="9" r="2.5"/>
+              <path d="M8.2 10.5l2.2 2M14 12.5l2.2-1.7"/>
+              <path d="M4 18h16"/>
+              <path d="M5.5 20.5q3-1.5 6.5-1.5t6.5 1.5"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="font-display text-xl mb-2" data-i18n="why.p4.title">A regional gateway</h3>
+            <p class="text-base leading-relaxed" style="color:var(--ink-soft)" data-i18n="why.p4.body">
+              Koh Phangan sits between Koh Samui and Koh Tao, with established travel and trade flows. Infrastructure built here is positioned to extend across the wider archipelago.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <p class="font-display italic text-center text-2xl md:text-[1.7rem] leading-relaxed mt-16 container-tight fade-up" style="color:var(--teal)" data-i18n="why.closing">
+        This is both a hospitality opportunity and a contribution to Thailand's energy transition goals.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== SECTION 5 — SUSTAINABILITY ========== -->
+  <section id="sustainability" class="section section-teal">
+    <div class="container-narrow">
+      <div class="text-center container-tight mb-12 fade-up">
+        <p class="eyebrow eyebrow-teal mb-5" data-i18n="sustain.eyebrow">Phase Two</p>
+        <h2 class="display-2 text-4xl md:text-[2.75rem]" data-i18n="sustain.headline">
+          From one resort to island infrastructure.
+        </h2>
+      </div>
+
+      <div class="container-tight space-y-6 text-lg leading-relaxed text-center fade-up" style="color:var(--ink-soft)">
+        <p data-i18n="sustain.p1">
+          The resort is the first step. By building a property that runs on its own renewable energy infrastructure, we are proving the model that defines our next phase.
+        </p>
+        <p data-i18n="sustain.p2">
+          Red Sunset KP is building distributed solar infrastructure across Koh Phangan, starting with our own properties and expanding to community partnerships.
+        </p>
+        <p data-i18n="sustain.p3">
+          Initial regulatory engagement is underway. The company has begun early-stage dialogue with the Provincial Electricity Authority (PEA) regarding renewable energy integration pathways, and is conducting compliance review with a local Thai architectural consultancy ahead of permit applications.
+        </p>
+        <p data-i18n="sustain.p4">
+          Our long-term roadmap includes grid integration in cooperation with PEA, subject to regulatory approvals. The company is positioned to engage with Thailand's national frameworks for sustainable investment and renewable energy development.
+        </p>
+      </div>
+
+      <!-- Timeline -->
+      <div class="max-w-3xl mx-auto mt-16 fade-up">
+        <div class="timeline-row">
+          <span class="timeline-marker" data-i18n="timeline.t1.when">2025</span>
+          <span class="timeline-label" data-i18n="timeline.t1.what">Land secured</span>
+        </div>
+        <div class="timeline-row">
+          <span class="timeline-marker" data-i18n="timeline.t2.when">Phase One</span>
+          <span class="timeline-label" data-i18n="timeline.t2.what">Construction planning</span>
+        </div>
+        <div class="timeline-row">
+          <span class="timeline-marker" data-i18n="timeline.t3.when">Phase Two</span>
+          <span class="timeline-label" data-i18n="timeline.t3.what">Initial operations</span>
+        </div>
+        <div class="timeline-row">
+          <span class="timeline-marker" data-i18n="timeline.t4.when">Phase Three</span>
+          <span class="timeline-label" data-i18n="timeline.t4.what">Solar infrastructure rollout</span>
+        </div>
+        <div class="timeline-row">
+          <span class="timeline-marker" data-i18n="timeline.t5.when">Future</span>
+          <span class="timeline-label" data-i18n="timeline.t5.what">Distributed energy partnerships across Koh Phangan</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SECTION 6 — LEADERSHIP ========== -->
+  <section id="leadership" class="section">
+    <div class="container-narrow">
+      <div class="text-center max-w-2xl mx-auto mb-14 fade-up">
+        <p class="eyebrow mb-5" data-i18n="leader.eyebrow">Leadership</p>
+        <h2 class="display-2 text-4xl md:text-[2.75rem] mb-5" data-i18n="leader.headline">
+          Local roots. Global thinking.
+        </h2>
+        <p class="text-base" style="color:var(--ink-muted)" data-i18n="leader.subhead">
+          A working partnership between Koh Phangan and the wider world.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] gap-6 lg:gap-8 fade-up">
+        <!-- Sirin -->
+        <article class="leader-card leader-featured">
+          <div class="flex flex-col sm:flex-row gap-7 items-start">
+            <div class="avatar" id="sirinAvatar" style="width:180px;height:180px;font-size:3rem;font-weight:400;">
+              <img src="assets/images/leadership/sirin-portrait.jpg" alt="Sirin Nekhamatcha, Founding Director" onerror="this.style.display='none';this.parentElement.textContent='SN';" />
+            </div>
+            <div>
+              <h3 class="font-display text-3xl mb-1" data-i18n="leader.sirin.name">Sirin Nekhamatcha</h3>
+              <p class="text-sm tracking-[0.14em] uppercase mb-5" style="color:var(--coral)" data-i18n="leader.sirin.title">Founding Director</p>
+              <div class="space-y-3 text-base leading-relaxed" style="color:var(--ink-soft)">
+                <p data-i18n="leader.sirin.bio1">Thai national. Based in Koh Phangan.</p>
+                <p data-i18n="leader.sirin.bio2">Sirin leads Red Sunset KP's operations on the ground — local relationships, regulatory coordination, partnerships with island stakeholders, and strategic positioning.</p>
+                <p data-i18n="leader.sirin.bio3">An established businesswoman on the island, with working relationships across regulators, the regional electricity authority, and the local business community.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Liran -->
+        <article class="leader-card">
+          <div class="flex flex-col sm:flex-row gap-5 items-start">
+            <div class="avatar" id="liranAvatar" style="width:120px;height:120px;font-size:2rem;font-weight:400;">
+              <img src="assets/images/leadership/liran-portrait.jpg" alt="Liran Miller, Strategic Partner" onerror="this.style.display='none';this.parentElement.textContent='LM';" />
+            </div>
+            <div>
+              <h3 class="font-display text-2xl mb-1" data-i18n="leader.liran.name">Liran Miller</h3>
+              <p class="text-sm tracking-[0.14em] uppercase mb-4" style="color:var(--teal)" data-i18n="leader.liran.title">Strategic Partner</p>
+              <div class="space-y-3 text-base leading-relaxed" style="color:var(--ink-soft)">
+                <p data-i18n="leader.liran.bio1">International entrepreneur. Based between Tel Aviv and Koh Phangan.</p>
+                <p data-i18n="leader.liran.bio2">Liran brings capital, business development experience, and a long-term commitment to building infrastructure that creates value for both the company and the island.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <p class="text-center text-sm mt-12 container-tight fade-up" style="color:var(--ink-muted)" data-i18n="leader.note">
+        Red Sunset KP operates in close coordination with sister company Kaite Bloom Co., Ltd., which provides hospitality service infrastructure on Koh Phangan.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== SECTION 7 — CONTACT ========== -->
+  <section id="contact" class="section" style="background:var(--sand-soft);">
+    <div class="container-narrow">
+      <div class="grid grid-cols-1 lg:grid-cols-[0.85fr_1.15fr] gap-12 lg:gap-20">
+        <div class="fade-up">
+          <p class="eyebrow mb-5" data-i18n="contact.eyebrow">Contact</p>
+          <h2 class="display-2 text-4xl md:text-[2.75rem] mb-8" data-i18n="contact.headline">
+            Building from Koh Phangan.
+          </h2>
+          <a href="mailto:hello@redsunsetkp.com" class="btn-primary">
+            <span data-i18n="hero.cta.primary">General Inquiries</span>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 fade-up">
+          <div>
+            <p class="eyebrow eyebrow-ink mb-4" data-i18n="contact.company.label">Company</p>
+            <p class="font-display text-xl mb-3" data-i18n="contact.company.name">Red Sunset KP Co., Ltd.</p>
+            <p class="text-base leading-relaxed" style="color:var(--ink-soft)" data-i18n="contact.company.address">
+              Koh Phangan, Surat Thani 84280<br/>Thailand
+            </p>
+            <!-- Registration No. placeholder per build brief. Confirmed value 0845567032172 (DBD) — to be inserted by Liam when authorized. -->
+            <p class="text-sm mt-5" style="color:var(--ink-muted)" data-i18n="contact.company.reg">
+              Company Registration No. [to be inserted]
+            </p>
+            <p class="text-sm" style="color:var(--ink-muted)" data-i18n="contact.company.reg.note">
+              Registration details available upon request.
+            </p>
+          </div>
+
+          <div>
+            <p class="eyebrow eyebrow-ink mb-4" data-i18n="contact.reach.label">Reach Us</p>
+            <p class="text-sm mb-1" style="color:var(--ink-muted)" data-i18n="contact.reach.general">General Inquiries</p>
+            <p class="mb-5"><a href="mailto:hello@redsunsetkp.com" style="color:var(--ink);border-bottom:1px solid var(--ink);">hello@redsunsetkp.com</a></p>
+
+            <p class="text-sm mb-1" style="color:var(--ink-muted)" data-i18n="contact.reach.phone1">Phone (Sirin, English / Thai)</p>
+            <p class="mb-5"><a href="tel:+66642899641" style="color:var(--ink);">+66 64 289 9641</a></p>
+
+            <p class="text-sm mb-1" style="color:var(--ink-muted)" data-i18n="contact.reach.phone2">Phone (international, English)</p>
+            <p><a href="tel:+66967907754" style="color:var(--ink);">+66 96 790 7754</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container-narrow py-16">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+        <div>
+          <img src="assets/brand/red-sunset-logo.svg" alt="Red Sunset KP" width="80" height="48" style="height:48px;width:auto;filter:brightness(0) invert(1);opacity:0.95;" />
+          <p class="mt-5 text-sm leading-relaxed" style="opacity:0.75;max-width:280px;" data-i18n="footer.tagline">
+            Sustainable hospitality, clean energy future.
+          </p>
+        </div>
+
+        <div>
+          <p class="text-xs uppercase tracking-[0.16em] mb-4" style="opacity:0.55;" data-i18n="footer.nav.label">Navigate</p>
+          <ul class="space-y-2.5 text-sm">
+            <li><a href="#vision" data-i18n="nav.about">About</a></li>
+            <li><a href="#resort" data-i18n="nav.resort">The Resort</a></li>
+            <li><a href="#why" data-i18n="nav.why">Why Koh Phangan</a></li>
+            <li><a href="#sustainability" data-i18n="nav.sustainability">Sustainability</a></li>
+            <li><a href="#leadership" data-i18n="nav.leadership">Leadership</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="text-xs uppercase tracking-[0.16em] mb-4" style="opacity:0.55;" data-i18n="footer.about.label">About</p>
+          <ul class="space-y-2.5 text-sm" style="opacity:0.85">
+            <li data-i18n="footer.copyright">© 2026 Red Sunset KP Co., Ltd.</li>
+            <li data-i18n="footer.sister">Sister company: Kaite Bloom Co., Ltd.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="rule" style="background:rgba(232,228,216,0.15);"></div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 footer-disclaimer text-xs leading-relaxed">
+        <p data-i18n="footer.compliance">
+          Red Sunset KP Co., Ltd. is a Thai-registered company operating in compliance with applicable Thai law. Business activities are conducted under appropriate licenses and registrations.
+        </p>
+        <p data-i18n="footer.disclaimer">
+          This website is for informational purposes only and does not constitute an offer to sell securities, real estate, or accommodation services.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script>
+    // Nav scroll glassmorphism
+    const navBar = document.getElementById('navBar');
+    let lastScroll = 0;
+    const onScroll = () => {
+      const s = window.scrollY;
+      if (s > 24) navBar.classList.add('scrolled');
+      else navBar.classList.remove('scrolled');
+      lastScroll = s;
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    // Mobile menu
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuToggle.addEventListener('click', () => {
+      const isOpen = mobileMenu.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', String(isOpen));
+      mobileMenu.setAttribute('aria-hidden', String(!isOpen));
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+    mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      mobileMenu.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }));
+
+    // Language toggle
+    const langEN = document.getElementById('langEN');
+    const langTH = document.getElementById('langTH');
+    const applyLang = (lang) => {
+      if (!window.I18N || !window.I18N[lang]) return;
+      const dict = window.I18N[lang];
+      document.documentElement.lang = lang;
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        const val = key.split('.').reduce((o, k) => (o ? o[k] : null), dict);
+        if (val != null) {
+          // Preserve <br> if present in original
+          if (el.innerHTML.includes('<br')) el.innerHTML = val.replace(/\n/g, '<br/>');
+          else el.textContent = val;
+        }
+      });
+      langEN.classList.toggle('active', lang === 'en');
+      langTH.classList.toggle('active', lang === 'th');
+      try { localStorage.setItem('rskp-lang', lang); } catch (e) {}
+    };
+    langEN.addEventListener('click', () => applyLang('en'));
+    langTH.addEventListener('click', () => applyLang('th'));
+
+    const stored = (() => { try { return localStorage.getItem('rskp-lang'); } catch (e) { return null; } })();
+    if (stored === 'th') applyLang('th');
+
+    // Fade-up on scroll
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('in');
+          obs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+  </script>
+</body>
+</html>
