@@ -318,6 +318,18 @@
         scroll-behavior: auto !important;
       }
       .fade-up { opacity: 1; transform: none; }
+      #hero video { display: none !important; }
+      #hero { background: linear-gradient(180deg, #2C5F5D 0%, #E07856 100%); }
+    }
+
+    /* Video hero — additional keyframes (pulse renamed to chip-pulse to avoid Tailwind collision) */
+    @keyframes chip-pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.3); }
+    }
+    @keyframes scrollDown {
+      0% { transform: translateY(-100%); }
+      100% { transform: translateY(400%); }
     }
 
     /* Mobile nav */
@@ -363,7 +375,7 @@
   <!-- ========== NAV ========== -->
   <nav class="nav-bar" id="navBar">
     <div class="container-narrow flex items-center justify-between">
-      <a href="#top" class="flex items-center gap-3" aria-label="Red Sunset KP — Home">
+      <a href="#hero" class="flex items-center gap-3" aria-label="Red Sunset KP — Home">
         <img src="assets/brand/red-sunset-logo.svg" alt="Red Sunset KP logo" width="60" height="36" style="height:36px;width:auto;" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-block'" />
         <span class="font-display text-xl" style="display:none;color:var(--coral-deep)">Red Sunset KP</span>
         <span class="wordmark text-[0.72rem] sm:text-xs" style="color:var(--ink)">Red Sunset KP</span>
@@ -399,92 +411,77 @@
     <a href="#contact" data-i18n="nav.contact">Contact</a>
   </div>
 
-  <!-- ========== SECTION 1 — HERO ========== -->
-  <header id="top" class="section pt-32 md:pt-36 pb-16 md:pb-24">
-    <div class="container-narrow">
-      <div class="grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-12 lg:gap-16 items-center">
-        <div class="fade-up">
-          <span class="chip">
-            <span class="pulse-dot" aria-hidden="true"></span>
-            <span data-i18n="hero.chip">Koh Phangan · In Development</span>
-          </span>
+  <!-- ========== SECTION 1 — HERO (video background) ========== -->
+  <section id="hero" class="relative w-full h-screen min-h-[700px] overflow-hidden">
 
-          <h1 class="display-1 text-[2.6rem] sm:text-5xl lg:text-[4rem] mt-7 mb-6" data-i18n="hero.headline">
-            Where sunset meets sustainability.
-          </h1>
+    <!-- VIDEO BACKGROUND (desktop) -->
+    <video
+      class="absolute inset-0 w-full h-full object-cover hidden md:block"
+      autoplay muted loop playsinline
+      poster="assets/video/hero-poster.jpg"
+      aria-hidden="true">
+      <source src="assets/video/hero-sunset-desktop.mp4" type="video/mp4">
+    </video>
 
-          <p class="text-lg leading-relaxed max-w-xl mb-9" style="color:var(--ink-soft)" data-i18n="hero.subhead">
-            A boutique eco-resort and clean energy initiative on Koh Phangan, Thailand. Built around renewable infrastructure from the ground up — a foundation for the island's energy transition.
-          </p>
+    <!-- VIDEO BACKGROUND (mobile, lighter) -->
+    <video
+      class="absolute inset-0 w-full h-full object-cover block md:hidden"
+      autoplay muted loop playsinline
+      poster="assets/video/hero-poster.jpg"
+      aria-hidden="true">
+      <source src="assets/video/hero-sunset-mobile.mp4" type="video/mp4">
+    </video>
 
-          <div class="flex flex-wrap items-center gap-x-7 gap-y-4 mb-8">
-            <a href="mailto:hello@redsunsetkp.com" class="btn-primary">
-              <span data-i18n="hero.cta.primary">General Inquiries</span>
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
-            </a>
-            <a href="#vision" class="btn-secondary">
-              <span data-i18n="hero.cta.secondary">Learn the vision</span>
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 5l4 4 4-4"/></svg>
-            </a>
-          </div>
+    <!-- DARK OVERLAY for text readability -->
+    <div class="absolute inset-0" style="background: linear-gradient(180deg, rgba(26,26,26,0.35) 0%, rgba(26,26,26,0.55) 60%, rgba(26,26,26,0.75) 100%);" aria-hidden="true"></div>
 
-          <p class="text-xs tracking-[0.14em] uppercase" style="color:var(--ink-muted)" data-i18n="hero.trust">
-            A Red Sunset KP Co., Ltd. project · Registered in Thailand
-          </p>
-        </div>
+    <!-- CONTENT -->
+    <div class="relative h-full container mx-auto px-6 lg:px-12 flex flex-col justify-center items-start max-w-6xl">
 
-        <!-- Hero art -->
-        <div class="fade-up">
-          <div class="hero-art" role="img" aria-label="Animated sunset gradient with geometric solar panel grid">
-            <div class="hero-sun" aria-hidden="true"></div>
-            <div class="hero-grid" aria-hidden="true"></div>
-            <!-- Solar panel grid overlay -->
-            <svg class="hero-panels" viewBox="0 0 400 144" preserveAspectRatio="none" aria-hidden="true">
-              <defs>
-                <linearGradient id="panelFade" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stop-color="#1A1A1A" stop-opacity="0.0"/>
-                  <stop offset="100%" stop-color="#1A1A1A" stop-opacity="0.45"/>
-                </linearGradient>
-              </defs>
-              <g fill="url(#panelFade)" stroke="rgba(255,255,255,0.18)" stroke-width="0.5">
-                <!-- Three rows of solar panel cells in perspective -->
-                <g transform="translate(0,30)">
-                  <rect x="20" y="0" width="36" height="20"/>
-                  <rect x="60" y="0" width="36" height="20"/>
-                  <rect x="100" y="0" width="36" height="20"/>
-                  <rect x="140" y="0" width="36" height="20"/>
-                  <rect x="180" y="0" width="36" height="20"/>
-                  <rect x="220" y="0" width="36" height="20"/>
-                  <rect x="260" y="0" width="36" height="20"/>
-                  <rect x="300" y="0" width="36" height="20"/>
-                  <rect x="340" y="0" width="36" height="20"/>
-                </g>
-                <g transform="translate(0,60)">
-                  <rect x="10" y="0" width="42" height="24"/>
-                  <rect x="56" y="0" width="42" height="24"/>
-                  <rect x="102" y="0" width="42" height="24"/>
-                  <rect x="148" y="0" width="42" height="24"/>
-                  <rect x="194" y="0" width="42" height="24"/>
-                  <rect x="240" y="0" width="42" height="24"/>
-                  <rect x="286" y="0" width="42" height="24"/>
-                  <rect x="332" y="0" width="42" height="24"/>
-                </g>
-                <g transform="translate(0,96)">
-                  <rect x="-5" y="0" width="52" height="32"/>
-                  <rect x="51" y="0" width="52" height="32"/>
-                  <rect x="107" y="0" width="52" height="32"/>
-                  <rect x="163" y="0" width="52" height="32"/>
-                  <rect x="219" y="0" width="52" height="32"/>
-                  <rect x="275" y="0" width="52" height="32"/>
-                  <rect x="331" y="0" width="52" height="32"/>
-                </g>
-              </g>
-            </svg>
-          </div>
-        </div>
+      <!-- Eyebrow chip -->
+      <div class="inline-flex items-center gap-2 px-4 py-2 mb-6 fade-up" style="background: rgba(255,255,255,0.12); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.2); border-radius: 999px;">
+        <span class="w-2 h-2 rounded-full" style="background: #E07856; animation: chip-pulse 2s ease-in-out infinite;" aria-hidden="true"></span>
+        <span class="text-xs uppercase tracking-[0.16em] text-white/90" data-i18n="hero.eyebrow">Koh Phangan · In Development</span>
+      </div>
+
+      <!-- Headline -->
+      <h1 class="font-display text-white fade-up" style="font-size: clamp(2.5rem, 6vw, 5rem); line-height: 1.05; max-width: 900px; text-shadow: 0 2px 20px rgba(0,0,0,0.3); font-weight: 400; letter-spacing: -0.02em;" data-i18n="hero.headline">
+        Where sunset meets sustainability.
+      </h1>
+
+      <!-- Subheadline -->
+      <p class="mt-6 text-white/90 fade-up" style="font-size: clamp(1.05rem, 1.4vw, 1.25rem); line-height: 1.6; max-width: 620px; text-shadow: 0 2px 12px rgba(0,0,0,0.3);" data-i18n="hero.subheadline">
+        A boutique eco-resort and clean energy initiative on Koh Phangan, Thailand. Built around renewable infrastructure from the ground up — a foundation for the island's energy transition.
+      </p>
+
+      <!-- CTAs -->
+      <div class="mt-10 flex flex-wrap gap-4 fade-up">
+        <a href="mailto:hello@redsunsetkp.com" class="inline-flex items-center gap-2 px-7 py-4 rounded-full transition-all duration-300 hover:scale-[1.02]" style="background: #E07856; color: white; font-weight: 500;">
+          <span data-i18n="hero.cta.primary">General Inquiries</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#vision" class="inline-flex items-center gap-2 px-7 py-4 rounded-full transition-all duration-300 hover:bg-white/10" style="border: 1px solid rgba(255,255,255,0.3); color: white;">
+          <span data-i18n="hero.cta.secondary">Learn the vision</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+        </a>
+      </div>
+
+      <!-- Trust line -->
+      <p class="mt-12 text-xs uppercase tracking-[0.18em] text-white/60 fade-up" data-i18n="hero.trust">
+        A Red Sunset KP Co., Ltd. project · Registered in Thailand
+      </p>
+
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/60" aria-hidden="true">
+      <span class="text-[10px] uppercase tracking-[0.2em]">Scroll</span>
+      <div class="w-px h-12 bg-white/40 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full bg-white" style="height: 30%; animation: scrollDown 2s ease-in-out infinite;"></div>
       </div>
     </div>
-  </header>
+
+  </section>
 
   <!-- ========== SECTION 2 — THE VISION ========== -->
   <section id="vision" class="section">

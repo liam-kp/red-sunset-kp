@@ -20,9 +20,9 @@ window.I18N = {
       contact: "Contact"
     },
     hero: {
-      chip: "Koh Phangan · In Development",
+      eyebrow: "Koh Phangan · In Development",
       headline: "Where sunset meets sustainability.",
-      subhead: "A boutique eco-resort and clean energy initiative on Koh Phangan, Thailand. Built around renewable infrastructure from the ground up — a foundation for the island's energy transition.",
+      subheadline: "A boutique eco-resort and clean energy initiative on Koh Phangan, Thailand. Built around renewable infrastructure from the ground up — a foundation for the island's energy transition.",
       cta: {
         primary: "General Inquiries",
         secondary: "Learn the vision"
@@ -141,9 +141,9 @@ window.I18N = {
       contact: "ติดต่อ"
     },
     hero: {
-      chip: "เกาะพะงัน · อยู่ระหว่างการพัฒนา",
+      eyebrow: "เกาะพะงัน · อยู่ระหว่างการพัฒนา",
       headline: "ที่ซึ่งพระอาทิตย์อัสดงพบกับความยั่งยืน",
-      subhead: "บูทีคอีโค-รีสอร์ตและโครงการพลังงานสะอาดบนเกาะพะงัน ประเทศไทย ออกแบบรอบโครงสร้างพลังงานหมุนเวียนตั้งแต่เริ่มต้น — รากฐานสำหรับการเปลี่ยนผ่านด้านพลังงานของเกาะ",
+      subheadline: "บูทีคอีโค-รีสอร์ตและโครงการพลังงานสะอาดบนเกาะพะงัน ประเทศไทย ออกแบบรอบโครงสร้างพลังงานหมุนเวียนตั้งแต่เริ่มต้น — รากฐานสำหรับการเปลี่ยนผ่านด้านพลังงานของเกาะ",
       cta: {
         primary: "สอบถามทั่วไป",
         secondary: "เรียนรู้วิสัยทัศน์"
