@@ -34,7 +34,7 @@ window.I18N = {
       headline: "Beautiful places. Cleaner energy. Real impact.",
       c1: {
         title: "Boutique Hospitality",
-        body: "A small, intentionally-designed eco-resort in Koh Phangan. Premium guest experience, operationally supported by our sister company Kaite Bloom Co., Ltd."
+        body: "A small, intentionally-designed eco-resort in Koh Phangan. Premium guest experience throughout."
       },
       c2: {
         title: "Clean Energy DNA",
@@ -95,10 +95,9 @@ window.I18N = {
       liran: {
         name: "Liran Miller",
         title: "Strategic Partner",
-        bio1: "International entrepreneur. Based between Tel Aviv and Koh Phangan.",
+        bio1: "International entrepreneur. Based in Koh Phangan.",
         bio2: "Liran brings capital, business development experience, and a long-term commitment to building infrastructure that creates value for both the company and the island."
-      },
-      note: "Red Sunset KP operates in close coordination with sister company Kaite Bloom Co., Ltd., which provides hospitality service infrastructure on Koh Phangan."
+      }
     },
     contact: {
       eyebrow: "Contact",
@@ -107,7 +106,7 @@ window.I18N = {
         label: "Company",
         name: "Red Sunset KP Co., Ltd.",
         address: "Koh Phangan, Surat Thani 84280\nThailand",
-        reg: "Company Registration No. [to be inserted]",
+        reg: "Company Registration No. 0845567032172",
         "reg.note": "Registration details available upon request."
       },
       reach: {
@@ -122,7 +121,6 @@ window.I18N = {
       nav: { label: "Navigate" },
       about: { label: "About" },
       copyright: "© 2026 Red Sunset KP Co., Ltd.",
-      sister: "Sister company: Kaite Bloom Co., Ltd.",
       compliance: "Red Sunset KP Co., Ltd. is a Thai-registered company operating in compliance with applicable Thai law. Business activities are conducted under appropriate licenses and registrations.",
       disclaimer: "This website is for informational purposes only and does not constitute an offer to sell securities, real estate, or accommodation services."
     }
@@ -156,7 +154,7 @@ window.I18N = {
       headline: "สถานที่งดงาม พลังงานสะอาดขึ้น ผลกระทบที่แท้จริง",
       c1: {
         title: "บูทีคโฮสปิทาลิตี",
-        body: "อีโค-รีสอร์ตขนาดเล็กบนเกาะพะงัน ออกแบบอย่างมีเจตนา ประสบการณ์ของผู้เข้าพักระดับพรีเมียม ดำเนินงานโดยได้รับการสนับสนุนจากบริษัทในเครือ บริษัท ไคเตะ บลูม จำกัด"
+        body: "อีโค-รีสอร์ตขนาดเล็กบนเกาะพะงัน ออกแบบอย่างมีเจตนา ประสบการณ์ของผู้เข้าพักระดับพรีเมียมตลอดการเข้าพัก"
       },
       c2: {
         title: "พันธุกรรมพลังงานสะอาด",
@@ -217,10 +215,9 @@ window.I18N = {
       liran: {
         name: "ลีรัน มิลเลอร์",
         title: "พันธมิตรเชิงกลยุทธ์",
-        bio1: "ผู้ประกอบการระหว่างประเทศ พำนักระหว่างเทลอาวีฟและเกาะพะงัน",
+        bio1: "ผู้ประกอบการระหว่างประเทศ พำนักอยู่บนเกาะพะงัน",
         bio2: "ลีรันนำมาซึ่งเงินทุน ประสบการณ์ด้านการพัฒนาธุรกิจ และความมุ่งมั่นระยะยาวในการสร้างโครงสร้างพื้นฐานที่สร้างคุณค่าให้ทั้งบริษัทและเกาะ"
-      },
-      note: "Red Sunset KP ดำเนินงานในการประสานงานอย่างใกล้ชิดกับบริษัทในเครือ บริษัท ไคเตะ บลูม จำกัด ซึ่งให้บริการโครงสร้างพื้นฐานด้านโฮสปิทาลิตีบนเกาะพะงัน"
+      }
     },
     contact: {
       eyebrow: "ติดต่อ",
@@ -229,7 +226,7 @@ window.I18N = {
         label: "บริษัท",
         name: "บริษัท เรด ซันเซท เคพี จำกัด",
         address: "เกาะพะงัน สุราษฎร์ธานี 84280\nประเทศไทย",
-        reg: "ทะเบียนนิติบุคคลเลขที่ [โปรดระบุ]",
+        reg: "ทะเบียนนิติบุคคลเลขที่ 0845567032172",
         "reg.note": "รายละเอียดการจดทะเบียนมีให้ตามคำขอ"
       },
       reach: {
@@ -244,7 +241,6 @@ window.I18N = {
       nav: { label: "นำทาง" },
       about: { label: "เกี่ยวกับ" },
       copyright: "© 2026 บริษัท เรด ซันเซท เคพี จำกัด",
-      sister: "บริษัทในเครือ: บริษัท ไคเตะ บลูม จำกัด",
       compliance: "บริษัท เรด ซันเซท เคพี จำกัด เป็นบริษัทจดทะเบียนในประเทศไทย ดำเนินกิจการโดยปฏิบัติตามกฎหมายไทยที่เกี่ยวข้อง กิจกรรมทางธุรกิจดำเนินการภายใต้ใบอนุญาตและการจดทะเบียนที่เหมาะสม",
       disclaimer: "เว็บไซต์นี้จัดทำขึ้นเพื่อวัตถุประสงค์ในการให้ข้อมูลเท่านั้น และมิใช่การเสนอขายหลักทรัพย์ อสังหาริมทรัพย์ หรือบริการที่พักแต่อย่างใด"
     }
