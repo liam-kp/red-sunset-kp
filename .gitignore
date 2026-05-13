@@ -11,3 +11,6 @@ Thumbs.db
 
 # Source images — only the copies in /assets/ ship
 /images/
+
+# Source videos — only optimized copies in /assets/video/ ship
+/VIDEO/

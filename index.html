@@ -150,59 +150,6 @@
     }
     .btn-secondary:hover { color: var(--coral); border-color: var(--coral); gap: 0.7rem; }
 
-    /* Eyebrow chip */
-    .chip {
-      display: inline-flex; align-items: center; gap: 0.55rem;
-      padding: 0.4rem 0.85rem; border-radius: 999px;
-      background: rgba(224, 120, 86, 0.08);
-      border: 1px solid rgba(224, 120, 86, 0.25);
-      font-size: 0.72rem; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase;
-      color: var(--coral-deep);
-    }
-    .pulse-dot {
-      width: 0.45rem; height: 0.45rem; border-radius: 999px; background: var(--coral);
-      position: relative;
-    }
-    .pulse-dot::before {
-      content: ''; position: absolute; inset: 0; border-radius: 999px; background: var(--coral);
-      animation: pulse 2.2s ease-out infinite;
-    }
-    @keyframes pulse {
-      0% { transform: scale(1); opacity: 0.6; }
-      80%, 100% { transform: scale(2.6); opacity: 0; }
-    }
-
-    /* Hero gradient */
-    .hero-art {
-      position: relative; aspect-ratio: 4 / 5; max-height: 640px; width: 100%;
-      border-radius: 28px; overflow: hidden;
-      background:
-        radial-gradient(120% 80% at 50% 100%, #F2A065 0%, #E07856 22%, #C4623F 42%, #8E4A38 70%, #2C5F5D 100%);
-      box-shadow: 0 24px 60px -28px rgba(196, 98, 63, 0.45);
-    }
-    .hero-sun {
-      position: absolute; left: 50%; bottom: -20%; transform: translateX(-50%);
-      width: 70%; aspect-ratio: 1; border-radius: 999px;
-      background: radial-gradient(circle, #FFE4A8 0%, #F5C779 35%, rgba(245, 199, 121, 0) 70%);
-      filter: blur(8px);
-      animation: sunBreathe 8s ease-in-out infinite;
-    }
-    @keyframes sunBreathe {
-      0%, 100% { transform: translateX(-50%) scale(1); opacity: 0.9; }
-      50% { transform: translateX(-50%) scale(1.06); opacity: 1; }
-    }
-    .hero-grid {
-      position: absolute; inset: 0;
-      background-image:
-        linear-gradient(rgba(26,26,26,0.18) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(26,26,26,0.18) 1px, transparent 1px);
-      background-size: 48px 48px;
-      mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.85) 55%, rgba(0,0,0,0.95) 100%);
-      -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.85) 55%, rgba(0,0,0,0.95) 100%);
-      opacity: 0.55;
-    }
-    .hero-panels { position: absolute; inset: auto 0 0 0; height: 36%; }
-
     /* Section dividers */
     .rule {
       height: 1px; background: var(--line); width: 100%;
@@ -432,8 +379,8 @@
       <source src="assets/video/hero-sunset-mobile.mp4" type="video/mp4">
     </video>
 
-    <!-- DARK OVERLAY for text readability -->
-    <div class="absolute inset-0" style="background: linear-gradient(180deg, rgba(26,26,26,0.35) 0%, rgba(26,26,26,0.55) 60%, rgba(26,26,26,0.75) 100%);" aria-hidden="true"></div>
+    <!-- DARK OVERLAY for text readability (top bumped 0.35 → 0.55 for WCAG AA on eyebrow chip) -->
+    <div class="absolute inset-0" style="background: linear-gradient(180deg, rgba(26,26,26,0.55) 0%, rgba(26,26,26,0.55) 60%, rgba(26,26,26,0.75) 100%);" aria-hidden="true"></div>
 
     <!-- CONTENT -->
     <div class="relative h-full container mx-auto px-6 lg:px-12 flex flex-col justify-center items-start max-w-6xl">
