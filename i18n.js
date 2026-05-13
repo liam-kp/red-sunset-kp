@@ -97,7 +97,8 @@ window.I18N = {
         title: "Strategic Partner",
         bio1: "International entrepreneur. Based in Koh Phangan.",
         bio2: "Liran brings capital, business development experience, and a long-term commitment to building infrastructure that creates value for both the company and the island."
-      }
+      },
+      caption: "On the ground in Koh Phangan."
     },
     contact: {
       eyebrow: "Contact",
@@ -217,7 +218,8 @@ window.I18N = {
         title: "พันธมิตรเชิงกลยุทธ์",
         bio1: "ผู้ประกอบการระหว่างประเทศ พำนักอยู่บนเกาะพะงัน",
         bio2: "ลีรันนำมาซึ่งเงินทุน ประสบการณ์ด้านการพัฒนาธุรกิจ และความมุ่งมั่นระยะยาวในการสร้างโครงสร้างพื้นฐานที่สร้างคุณค่าให้ทั้งบริษัทและเกาะ"
-      }
+      },
+      caption: "ปฏิบัติงานบนเกาะพะงัน"
     },
     contact: {
       eyebrow: "ติดต่อ",
