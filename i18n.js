@@ -45,6 +45,17 @@ window.I18N = {
         body: "An investment foundation designed for scale — structured to support future expansion into renewable energy infrastructure under Thailand's national investment frameworks."
       }
     },
+    visionflow: {
+      eyebrow: "The Vision in Motion",
+      headline: "Five steps. One direction.",
+      subheadline: "A foundation built around renewable infrastructure, designed to evolve with regulatory frameworks and the island's long-term energy needs.",
+      n1: { title: "Solar Foundation", desc: "Renewable infrastructure designed into Phase One — built around the climate, not against it." },
+      n2: { title: "Storage Capacity", desc: "Energy storage capability designed to extend usability beyond daylight hours." },
+      n3: { title: "Smart Consumption", desc: "Intelligent demand management — using less by design, not by restriction." },
+      n4: { title: "Grid Integration", desc: "Subject to early-stage dialogue with PEA regarding renewable integration pathways." },
+      n5: { title: "Island Transition", desc: "Long-term vision: contributing to Koh Phangan's renewable energy future." },
+      disclaimer: "All energy-related plans are subject to applicable regulatory approvals and engineering review."
+    },
     resort: {
       eyebrow: "Phase One",
       headline: "A small resort with a big idea.",
@@ -165,6 +176,18 @@ window.I18N = {
         title: "สร้างสำหรับมุมมองระยะยาว",
         body: "รากฐานการลงทุนที่ออกแบบมาเพื่อการขยายตัว — มีโครงสร้างเพื่อรองรับการต่อยอดสู่โครงสร้างพื้นฐานด้านพลังงานหมุนเวียน ภายใต้กรอบส่งเสริมการลงทุนระดับชาติของประเทศไทย"
       }
+    },
+    // ---- visionflow (TH DRAFT — pending Sirin review) ----
+    visionflow: {
+      eyebrow: "วิสัยทัศน์ที่กำลังเคลื่อนไหว",
+      headline: "ห้าก้าว ทิศทางเดียว",
+      subheadline: "รากฐานที่สร้างรอบโครงสร้างพลังงานหมุนเวียน ออกแบบให้พัฒนาไปพร้อมกับกรอบกฎระเบียบและความต้องการพลังงานในระยะยาวของเกาะ",
+      n1: { title: "พื้นฐานพลังงานแสงอาทิตย์", desc: "โครงสร้างพลังงานหมุนเวียนถูกออกแบบในเฟสที่หนึ่ง สร้างให้สอดคล้องกับสภาพอากาศ" },
+      n2: { title: "ความสามารถในการกักเก็บ", desc: "ความสามารถในการกักเก็บพลังงานที่ออกแบบมาเพื่อขยายการใช้งานเกินช่วงเวลากลางวัน" },
+      n3: { title: "การใช้พลังงานอัจฉริยะ", desc: "การจัดการอุปสงค์อัจฉริยะ ใช้น้อยลงด้วยการออกแบบ ไม่ใช่ด้วยการจำกัด" },
+      n4: { title: "การเชื่อมโยงกับโครงข่ายไฟฟ้า", desc: "อยู่ระหว่างการเจรจาขั้นต้นกับ กฟภ. เกี่ยวกับแนวทางการบูรณาการพลังงานหมุนเวียน" },
+      n5: { title: "การเปลี่ยนผ่านของเกาะ", desc: "วิสัยทัศน์ระยะยาว ร่วมสร้างอนาคตพลังงานหมุนเวียนของเกาะพะงัน" },
+      disclaimer: "แผนการด้านพลังงานทั้งหมดอยู่ภายใต้การอนุมัติเชิงกฎระเบียบและการตรวจสอบทางวิศวกรรมที่เกี่ยวข้อง"
     },
     resort: {
       eyebrow: "ระยะที่หนึ่ง",
