@@ -15,6 +15,7 @@ window.I18N = {
       about: "About",
       resort: "The Resort",
       why: "Why Koh Phangan",
+      thesite: "The Site",
       sustainability: "Sustainability",
       leadership: "Leadership",
       contact: "Contact"
@@ -52,19 +53,25 @@ window.I18N = {
       n1: { title: "Solar Foundation", desc: "Renewable infrastructure designed into Phase One — built around the climate, not against it." },
       n2: { title: "Storage Capacity", desc: "Energy storage capability designed to extend usability beyond daylight hours." },
       n3: { title: "Smart Consumption", desc: "Intelligent demand management — using less by design, not by restriction." },
-      n4: { title: "Grid Integration", desc: "Subject to early-stage dialogue with PEA regarding renewable integration pathways." },
+      n4: { title: "Grid Integration", desc: "Grid integration pathways — under early-stage dialogue with PEA regarding renewable connection." },
       n5: { title: "Island Transition", desc: "Long-term vision: contributing to Koh Phangan's renewable energy future." },
       disclaimer: "All energy-related plans are subject to applicable regulatory approvals and engineering review."
+    },
+    thesite: {
+      eyebrow: "The Site",
+      headline: "Where the project takes shape.",
+      subheadline: "A coastal parcel on Koh Phangan, secured by Red Sunset KP Co., Ltd. Positioned among established premium residences, with direct frontage to a quiet bay.",
+      caption: "Aerial view, March 2026. Adjacent properties shown for context — Red Sunset KP parcel sits between existing villas and oceanfront residences."
     },
     resort: {
       eyebrow: "Phase One",
       headline: "A small resort with a big idea.",
       p1: "The company holds title to a coastal parcel on Koh Phangan, acquired and registered in the early operational phase of Red Sunset KP. The land is held as the operational base for the project — not for passive investment.",
-      p2: "The build plan calls for a small number of villas on a hillside site, designed with restraint. Compact footprint, native landscaping, and renewable energy infrastructure integrated into the structure rather than added later.",
+      p2: "The design pathway envisions a small number of villas on a hillside site, designed with restraint. Compact footprint, native landscaping, and renewable energy infrastructure integrated into the structure rather than added later.",
       p3: "The guest experience is shaped around quiet, light, and the materials of the place. A short walk from the coastline. Architecture that gives more than it takes.",
       m1: { label: "Land Secured", body: "Phase one complete." },
       m2: { label: "Design & Planning", body: "In progress with local Thai architectural consultancy." },
-      m3: { label: "Renewable Infrastructure", body: "Built into the foundation." }
+      m3: { label: "Renewable Infrastructure", body: "Designed into the foundation." }
     },
     why: {
       eyebrow: "Why Koh Phangan",
@@ -78,6 +85,7 @@ window.I18N = {
       closing: "This is both a hospitality opportunity and a contribution to Thailand's energy transition goals."
     },
     sustain: {
+      eyebrow_top: "Sustainability",
       eyebrow: "Phase Two",
       headline: "From one resort to island infrastructure.",
       p1: "The resort is the first step. By building a property that runs on its own renewable energy infrastructure, we are proving the model that defines our next phase.",
@@ -147,6 +155,7 @@ window.I18N = {
       about: "เกี่ยวกับเรา",
       resort: "รีสอร์ต",
       why: "ทำไมต้องเกาะพะงัน",
+      thesite: "ที่ตั้งโครงการ",
       sustainability: "ความยั่งยืน",
       leadership: "ทีมผู้บริหาร",
       contact: "ติดต่อ"
@@ -185,19 +194,26 @@ window.I18N = {
       n1: { title: "พื้นฐานพลังงานแสงอาทิตย์", desc: "โครงสร้างพลังงานหมุนเวียนถูกออกแบบในเฟสที่หนึ่ง สร้างให้สอดคล้องกับสภาพอากาศ" },
       n2: { title: "ความสามารถในการกักเก็บ", desc: "ความสามารถในการกักเก็บพลังงานที่ออกแบบมาเพื่อขยายการใช้งานเกินช่วงเวลากลางวัน" },
       n3: { title: "การใช้พลังงานอัจฉริยะ", desc: "การจัดการอุปสงค์อัจฉริยะ ใช้น้อยลงด้วยการออกแบบ ไม่ใช่ด้วยการจำกัด" },
-      n4: { title: "การเชื่อมโยงกับโครงข่ายไฟฟ้า", desc: "อยู่ระหว่างการเจรจาขั้นต้นกับ กฟภ. เกี่ยวกับแนวทางการบูรณาการพลังงานหมุนเวียน" },
+      n4: { title: "การเชื่อมโยงกับโครงข่ายไฟฟ้า", desc: "แนวทางการบูรณาการกับโครงข่ายไฟฟ้า — อยู่ระหว่างการเจรจาขั้นต้นกับ กฟภ. เกี่ยวกับการเชื่อมต่อพลังงานหมุนเวียน" },
       n5: { title: "การเปลี่ยนผ่านของเกาะ", desc: "วิสัยทัศน์ระยะยาว ร่วมสร้างอนาคตพลังงานหมุนเวียนของเกาะพะงัน" },
       disclaimer: "แผนการด้านพลังงานทั้งหมดอยู่ภายใต้การอนุมัติเชิงกฎระเบียบและการตรวจสอบทางวิศวกรรมที่เกี่ยวข้อง"
+    },
+    // ---- thesite (TH DRAFT — pending Sirin review) ----
+    thesite: {
+      eyebrow: "ที่ตั้งโครงการ",
+      headline: "ที่ที่โครงการเริ่มเป็นรูปเป็นร่าง",
+      subheadline: "ที่ดินติดชายทะเลบนเกาะพะงัน ภายใต้กรรมสิทธิ์ของบริษัท เรด ซันเซ็ต เคพี จำกัด ตั้งอยู่ท่ามกลางที่พักระดับพรีเมียม พร้อมแนวหาดส่วนตัวสู่อ่าวสงบ",
+      caption: "ภาพถ่ายทางอากาศ มีนาคม 2026 อสังหาริมทรัพย์โดยรอบแสดงเพื่อบริบท — ที่ดิน Red Sunset KP ตั้งอยู่ระหว่างวิลล่าที่มีอยู่และที่พักริมทะเล"
     },
     resort: {
       eyebrow: "ระยะที่หนึ่ง",
       headline: "รีสอร์ตเล็ก ๆ ที่มาพร้อมแนวคิดยิ่งใหญ่",
       p1: "บริษัทถือกรรมสิทธิ์ในที่ดินติดชายฝั่งบนเกาะพะงัน ซึ่งได้มาและจดทะเบียนในช่วงเริ่มต้นของการดำเนินกิจการของ Red Sunset KP ที่ดินถือไว้เพื่อเป็นฐานปฏิบัติการของโครงการ — มิใช่เพื่อการลงทุนเฉื่อย",
-      p2: "แผนการก่อสร้างประกอบด้วยวิลล่าจำนวนน้อย บนพื้นที่ลาดเขา ออกแบบอย่างมีความยับยั้งชั่งใจ พื้นที่ใช้สอยกระชับ ใช้พืชพรรณท้องถิ่นในการตกแต่งภูมิทัศน์ และผสมผสานโครงสร้างพลังงานหมุนเวียนเข้าไว้ในตัวอาคารตั้งแต่แรก ไม่ใช่ติดตั้งภายหลัง",
+      p2: "แนวทางการออกแบบมุ่งสู่วิลล่าจำนวนน้อย บนพื้นที่ลาดเขา ออกแบบอย่างมีความยับยั้งชั่งใจ พื้นที่ใช้สอยกระชับ ใช้พืชพรรณท้องถิ่นในการตกแต่งภูมิทัศน์ และผสมผสานโครงสร้างพลังงานหมุนเวียนเข้าไว้ในตัวอาคารตั้งแต่แรก ไม่ใช่ติดตั้งภายหลัง",
       p3: "ประสบการณ์ของผู้เข้าพักถูกหล่อหลอมขึ้นรอบความเงียบสงบ แสงธรรมชาติ และวัสดุของพื้นที่ เดินไม่กี่ก้าวก็ถึงชายฝั่ง สถาปัตยกรรมที่ให้คืนมากกว่าที่หยิบไป",
       m1: { label: "ที่ดินได้รับการจัดหาแล้ว", body: "ระยะที่หนึ่งเสร็จสมบูรณ์" },
       m2: { label: "การออกแบบและวางแผน", body: "อยู่ระหว่างดำเนินการร่วมกับสำนักงานสถาปนิกชาวไทยในท้องถิ่น" },
-      m3: { label: "โครงสร้างพลังงานหมุนเวียน", body: "สร้างไว้ในรากฐาน" }
+      m3: { label: "โครงสร้างพลังงานหมุนเวียน", body: "ออกแบบไว้ในรากฐาน" }
     },
     why: {
       eyebrow: "ทำไมต้องเกาะพะงัน",
@@ -211,6 +227,7 @@ window.I18N = {
       closing: "นี่คือทั้งโอกาสด้านโฮสปิทาลิตี และการมีส่วนร่วมต่อเป้าหมายการเปลี่ยนผ่านด้านพลังงานของประเทศไทย"
     },
     sustain: {
+      eyebrow_top: "ความยั่งยืน",
       eyebrow: "ระยะที่สอง",
       headline: "จากรีสอร์ตเดียว สู่โครงสร้างพื้นฐานทั่วเกาะ",
       p1: "รีสอร์ตคือก้าวแรก โดยการสร้างทรัพย์สินที่ทำงานด้วยโครงสร้างพลังงานหมุนเวียนของตนเอง เรากำลังพิสูจน์โมเดลที่กำหนดระยะถัดไปของเรา",
