@@ -88,14 +88,14 @@ window.I18N = {
       eyebrow_top: "Sustainability",
       eyebrow: "Phase Two",
       headline: "From one resort to island infrastructure.",
-      p1: "The resort is the first step. By building a property that runs on its own renewable energy infrastructure, we are proving the model that defines our next phase.",
-      p2: "Red Sunset KP is building distributed solar infrastructure across Koh Phangan, starting with our own properties and expanding to community partnerships.",
+      p1: "The resort is the first step. By designing a property that runs on its own renewable energy infrastructure, we are proving the model that defines our next phase.",
+      p2: "Red Sunset KP is developing a roadmap for distributed solar infrastructure across Koh Phangan, starting with our own properties and expanding to community partnerships.",
       p3: "Initial regulatory engagement is underway. The company has begun early-stage dialogue with the Provincial Electricity Authority (PEA) regarding renewable energy integration pathways, and is conducting compliance review with a local Thai architectural consultancy ahead of permit applications.",
       p4: "Our long-term roadmap includes grid integration in cooperation with PEA, subject to regulatory approvals. The company is positioned to engage with Thailand's national frameworks for sustainable investment and renewable energy development."
     },
     timeline: {
       t1: { when: "2025", what: "Land secured" },
-      t2: { when: "Phase One", what: "Construction planning" },
+      t2: { when: "Phase One", what: "Design planning" },
       t3: { when: "Phase Two", what: "Initial operations" },
       t4: { when: "Phase Three", what: "Solar infrastructure rollout" },
       t5: { when: "Future", what: "Distributed energy partnerships across Koh Phangan" }
@@ -116,8 +116,7 @@ window.I18N = {
         title: "Strategic Partner",
         bio1: "International entrepreneur. Based in Koh Phangan.",
         bio2: "Liran brings capital, business development experience, and a long-term commitment to building infrastructure that creates value for both the company and the island."
-      },
-      caption: "On the ground in Koh Phangan."
+      }
     },
     contact: {
       eyebrow: "Contact",
@@ -230,14 +229,14 @@ window.I18N = {
       eyebrow_top: "ความยั่งยืน",
       eyebrow: "ระยะที่สอง",
       headline: "จากรีสอร์ตเดียว สู่โครงสร้างพื้นฐานทั่วเกาะ",
-      p1: "รีสอร์ตคือก้าวแรก โดยการสร้างทรัพย์สินที่ทำงานด้วยโครงสร้างพลังงานหมุนเวียนของตนเอง เรากำลังพิสูจน์โมเดลที่กำหนดระยะถัดไปของเรา",
-      p2: "Red Sunset KP กำลังสร้างโครงสร้างพลังงานแสงอาทิตย์แบบกระจายทั่วเกาะพะงัน เริ่มจากทรัพย์สินของเราเอง และขยายไปสู่ความร่วมมือกับชุมชน",
+      p1: "รีสอร์ตคือก้าวแรก โดยการออกแบบทรัพย์สินที่ทำงานด้วยโครงสร้างพลังงานหมุนเวียนของตนเอง เรากำลังพิสูจน์โมเดลที่กำหนดระยะถัดไปของเรา",
+      p2: "Red Sunset KP กำลังจัดทำแผนแม่บทสำหรับโครงสร้างพลังงานแสงอาทิตย์แบบกระจายทั่วเกาะพะงัน เริ่มจากทรัพย์สินของเราเอง และขยายไปสู่ความร่วมมือกับชุมชน",
       p3: "การประสานงานเชิงกฎระเบียบในระยะเริ่มต้นกำลังดำเนินอยู่ บริษัทได้เริ่มการหารือในระยะเริ่มต้นกับการไฟฟ้าส่วนภูมิภาค (กฟภ.) เกี่ยวกับแนวทางการบูรณาการพลังงานหมุนเวียน และอยู่ระหว่างการตรวจสอบการปฏิบัติตามกฎหมายกับสำนักงานสถาปนิกชาวไทยในท้องถิ่น ก่อนการยื่นขออนุญาตก่อสร้าง",
       p4: "แผนระยะยาวของเรารวมถึงการเชื่อมต่อระบบโครงข่ายร่วมกับ กฟภ. ภายใต้การอนุมัติเชิงกฎระเบียบ บริษัทอยู่ในตำแหน่งที่จะมีส่วนร่วมกับกรอบส่งเสริมการลงทุนระดับชาติของประเทศไทย สำหรับการลงทุนอย่างยั่งยืนและการพัฒนาพลังงานหมุนเวียน"
     },
     timeline: {
       t1: { when: "พ.ศ. 2568", what: "ได้มาซึ่งที่ดิน" },
-      t2: { when: "ระยะที่หนึ่ง", what: "การวางแผนการก่อสร้าง" },
+      t2: { when: "ระยะที่หนึ่ง", what: "การวางแผนการออกแบบ" },
       t3: { when: "ระยะที่สอง", what: "การเริ่มดำเนินงาน" },
       t4: { when: "ระยะที่สาม", what: "การติดตั้งโครงสร้างพลังงานแสงอาทิตย์" },
       t5: { when: "อนาคต", what: "ความร่วมมือด้านพลังงานแบบกระจายทั่วเกาะพะงัน" }
@@ -258,8 +257,7 @@ window.I18N = {
         title: "พันธมิตรเชิงกลยุทธ์",
         bio1: "ผู้ประกอบการระหว่างประเทศ พำนักอยู่บนเกาะพะงัน",
         bio2: "ลีรันนำมาซึ่งเงินทุน ประสบการณ์ด้านการพัฒนาธุรกิจ และความมุ่งมั่นระยะยาวในการสร้างโครงสร้างพื้นฐานที่สร้างคุณค่าให้ทั้งบริษัทและเกาะ"
-      },
-      caption: "ปฏิบัติงานบนเกาะพะงัน"
+      }
     },
     contact: {
       eyebrow: "ติดต่อ",
