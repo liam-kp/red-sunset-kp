@@ -115,7 +115,7 @@ window.I18N = {
         name: "Liran Miller",
         title: "Strategic Partner",
         bio1: "International entrepreneur. Based in Koh Phangan.",
-        bio2: "Liran brings capital, business development experience, and a long-term commitment to building infrastructure that creates value for both the company and the island."
+        bio2: "Liran brings capital, business development experience, and a long-term commitment to developing infrastructure that creates value for both the company and the island."
       }
     },
     contact: {
@@ -256,7 +256,7 @@ window.I18N = {
         name: "ลีรัน มิลเลอร์",
         title: "พันธมิตรเชิงกลยุทธ์",
         bio1: "ผู้ประกอบการระหว่างประเทศ พำนักอยู่บนเกาะพะงัน",
-        bio2: "ลีรันนำมาซึ่งเงินทุน ประสบการณ์ด้านการพัฒนาธุรกิจ และความมุ่งมั่นระยะยาวในการสร้างโครงสร้างพื้นฐานที่สร้างคุณค่าให้ทั้งบริษัทและเกาะ"
+        bio2: "ลีรันนำมาซึ่งเงินทุน ประสบการณ์ด้านการพัฒนาธุรกิจ และความมุ่งมั่นระยะยาวในการพัฒนาโครงสร้างพื้นฐานที่สร้างคุณค่าให้ทั้งบริษัทและเกาะ"
       }
     },
     contact: {
